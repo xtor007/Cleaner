@@ -11,6 +11,8 @@ class CleanerViewController: UIViewController {
 
     private let viewModel: CleanerViewModel
 
+    @IBOutlet weak var yourStorageInfoView: YourStorageInfoView!
+
     init(viewModel: CleanerViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -22,6 +24,11 @@ class CleanerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        yourStorageInfoView.updateData(storageInfo: StorageInfo(
+            totalMemory: MemorySize(value: 128 * 1024),
+            availableMemory: MemorySize(value: 24 * 1024),
+            trashSize: MemorySize(value: 470)
+        ))
     }
 
 }

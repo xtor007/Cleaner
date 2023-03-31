@@ -33,6 +33,9 @@
 		FF4FB4D429D77BBE00B5CA30 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF4FB4C829D77BBE00B5CA30 /* Roboto-Medium.ttf */; };
 		FF4FB4D529D77BBE00B5CA30 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF4FB4C929D77BBE00B5CA30 /* Roboto-Regular.ttf */; };
 		FF7F873D29D7912B00B0BD6B /* UIView+FixInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F873C29D7912B00B0BD6B /* UIView+FixInView.swift */; };
+		FF7F874029D79B0300B0BD6B /* StorageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F873F29D79B0300B0BD6B /* StorageInfo.swift */; };
+		FF7F874229D79BB200B0BD6B /* MemorySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F874129D79BB200B0BD6B /* MemorySize.swift */; };
+		FF7F874429D79D5400B0BD6B /* Double+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F874329D79D5400B0BD6B /* Double+Description.swift */; };
 		FFDFEDAC29D616FC002354C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDFEDAB29D616FC002354C4 /* AppDelegate.swift */; };
 		FFDFEDAE29D616FC002354C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDFEDAD29D616FC002354C4 /* SceneDelegate.swift */; };
 		FFDFEDB529D616FF002354C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDFEDB429D616FF002354C4 /* Assets.xcassets */; };
@@ -65,6 +68,9 @@
 		FF4FB4C829D77BBE00B5CA30 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		FF4FB4C929D77BBE00B5CA30 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		FF7F873C29D7912B00B0BD6B /* UIView+FixInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FixInView.swift"; sourceTree = "<group>"; };
+		FF7F873F29D79B0300B0BD6B /* StorageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageInfo.swift; sourceTree = "<group>"; };
+		FF7F874129D79BB200B0BD6B /* MemorySize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySize.swift; sourceTree = "<group>"; };
+		FF7F874329D79D5400B0BD6B /* Double+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Description.swift"; sourceTree = "<group>"; };
 		FFDFEDA829D616FC002354C4 /* Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDFEDAB29D616FC002354C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDFEDAD29D616FC002354C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 		FF4FB49329D75C0800B5CA30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF7F873E29D79AE800B0BD6B /* Storage */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,8 +229,18 @@
 			isa = PBXGroup;
 			children = (
 				FF7F873C29D7912B00B0BD6B /* UIView+FixInView.swift */,
+				FF7F874329D79D5400B0BD6B /* Double+Description.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		FF7F873E29D79AE800B0BD6B /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				FF7F873F29D79B0300B0BD6B /* StorageInfo.swift */,
+				FF7F874129D79BB200B0BD6B /* MemorySize.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		FFDFED9F29D616FC002354C4 = {
@@ -389,8 +406,11 @@
 				FF4FB4B729D7707200B5CA30 /* Assets.generated.swift in Sources */,
 				FFDFEDAC29D616FC002354C4 /* AppDelegate.swift in Sources */,
 				FF4FB4BB29D7768500B5CA30 /* YourStorageInfoView.swift in Sources */,
+				FF7F874029D79B0300B0BD6B /* StorageInfo.swift in Sources */,
 				FFDFEDAE29D616FC002354C4 /* SceneDelegate.swift in Sources */,
+				FF7F874229D79BB200B0BD6B /* MemorySize.swift in Sources */,
 				FF4FB4B229D7685D00B5CA30 /* GradientView.swift in Sources */,
+				FF7F874429D79D5400B0BD6B /* Double+Description.swift in Sources */,
 				FF4FB49C29D75CC900B5CA30 /* MainViewModel.swift in Sources */,
 				FF4FB4B829D7707200B5CA30 /* Strings.generated.swift in Sources */,
 				FF4FB4AF29D7641C00B5CA30 /* CleanerViewModel.swift in Sources */,
