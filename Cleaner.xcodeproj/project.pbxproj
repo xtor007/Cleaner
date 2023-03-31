@@ -14,6 +14,10 @@
 		FF4FB4AB29D763FA00B5CA30 /* CleanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB4A929D763FA00B5CA30 /* CleanerViewController.swift */; };
 		FF4FB4AC29D763FA00B5CA30 /* CleanerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF4FB4AA29D763FA00B5CA30 /* CleanerViewController.xib */; };
 		FF4FB4AF29D7641C00B5CA30 /* CleanerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB4AE29D7641C00B5CA30 /* CleanerViewModel.swift */; };
+		FF4FB4B229D7685D00B5CA30 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB4B129D7685D00B5CA30 /* GradientView.swift */; };
+		FF4FB4B629D7707100B5CA30 /* Fonts.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB4B329D7707100B5CA30 /* Fonts.generated.swift */; };
+		FF4FB4B729D7707200B5CA30 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB4B429D7707100B5CA30 /* Assets.generated.swift */; };
+		FF4FB4B829D7707200B5CA30 /* Strings.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4FB4B529D7707100B5CA30 /* Strings.generated.swift */; };
 		FFDFEDAC29D616FC002354C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDFEDAB29D616FC002354C4 /* AppDelegate.swift */; };
 		FFDFEDAE29D616FC002354C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDFEDAD29D616FC002354C4 /* SceneDelegate.swift */; };
 		FFDFEDB529D616FF002354C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDFEDB429D616FF002354C4 /* Assets.xcassets */; };
@@ -27,6 +31,10 @@
 		FF4FB4A929D763FA00B5CA30 /* CleanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerViewController.swift; sourceTree = "<group>"; };
 		FF4FB4AA29D763FA00B5CA30 /* CleanerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CleanerViewController.xib; sourceTree = "<group>"; };
 		FF4FB4AE29D7641C00B5CA30 /* CleanerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerViewModel.swift; sourceTree = "<group>"; };
+		FF4FB4B129D7685D00B5CA30 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FF4FB4B329D7707100B5CA30 /* Fonts.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.generated.swift; sourceTree = "<group>"; };
+		FF4FB4B429D7707100B5CA30 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
+		FF4FB4B529D7707100B5CA30 /* Strings.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.generated.swift; sourceTree = "<group>"; };
 		FFDFEDA829D616FC002354C4 /* Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDFEDAB29D616FC002354C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDFEDAD29D616FC002354C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,9 @@
 		FF4FB49029D75B9600B5CA30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FF4FB4B429D7707100B5CA30 /* Assets.generated.swift */,
+				FF4FB4B329D7707100B5CA30 /* Fonts.generated.swift */,
+				FF4FB4B529D7707100B5CA30 /* Strings.generated.swift */,
 				FF4FB49F29D7618800B5CA30 /* Fonts */,
 				FFDFEDB429D616FF002354C4 /* Assets.xcassets */,
 				FF4FB4A629D761C700B5CA30 /* Localizable.strings */,
@@ -147,6 +158,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FF4FB4B029D7685000B5CA30 /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				FF4FB4B129D7685D00B5CA30 /* GradientView.swift */,
+			);
+			path = Auxiliary;
+			sourceTree = "<group>";
+		};
 		FFDFED9F29D616FC002354C4 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +185,7 @@
 		FFDFEDAA29D616FC002354C4 /* Cleaner */ = {
 			isa = PBXGroup;
 			children = (
+				FF4FB4B029D7685000B5CA30 /* Auxiliary */,
 				FF4FB49329D75C0800B5CA30 /* Model */,
 				FF4FB49229D75BF400B5CA30 /* Service */,
 				FF4FB49129D75BE700B5CA30 /* Flow */,
@@ -292,10 +312,14 @@
 			files = (
 				FF4FB4AB29D763FA00B5CA30 /* CleanerViewController.swift in Sources */,
 				FF4FB49829D75CAE00B5CA30 /* MainViewController.swift in Sources */,
+				FF4FB4B729D7707200B5CA30 /* Assets.generated.swift in Sources */,
 				FFDFEDAC29D616FC002354C4 /* AppDelegate.swift in Sources */,
 				FFDFEDAE29D616FC002354C4 /* SceneDelegate.swift in Sources */,
+				FF4FB4B229D7685D00B5CA30 /* GradientView.swift in Sources */,
 				FF4FB49C29D75CC900B5CA30 /* MainViewModel.swift in Sources */,
+				FF4FB4B829D7707200B5CA30 /* Strings.generated.swift in Sources */,
 				FF4FB4AF29D7641C00B5CA30 /* CleanerViewModel.swift in Sources */,
+				FF4FB4B629D7707100B5CA30 /* Fonts.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
