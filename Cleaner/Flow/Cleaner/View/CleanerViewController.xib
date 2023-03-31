@@ -47,6 +47,14 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmA-V6-qCO" customClass="YourStorageInfoView" customModule="Cleaner" customModuleProvider="target">
+                    <rect key="frame" x="96.666666666666686" y="119" width="200" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XmA-V6-qCO" secondAttribute="height" multiplier="1:1" id="Zi0-LC-ZiU"/>
+                        <constraint firstAttribute="width" constant="200" id="z1J-hO-kDD"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -54,7 +62,9 @@
                 <constraint firstAttribute="bottom" secondItem="Npb-BP-iNV" secondAttribute="bottom" id="AxR-vv-huK"/>
                 <constraint firstItem="Npb-BP-iNV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hgz-95-ONq"/>
                 <constraint firstAttribute="trailing" secondItem="Npb-BP-iNV" secondAttribute="trailing" id="K0d-lP-14p"/>
+                <constraint firstItem="XmA-V6-qCO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ouj-DC-VzX"/>
                 <constraint firstItem="Npb-BP-iNV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P48-Ff-f8J"/>
+                <constraint firstItem="XmA-V6-qCO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="s74-Pn-SVC"/>
             </constraints>
             <point key="canvasLocation" x="121" y="20"/>
         </view>

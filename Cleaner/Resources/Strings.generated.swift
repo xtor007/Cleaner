@@ -10,6 +10,19 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  internal enum YourStorage {
+    /// Available:
+    internal static let available = Strings.tr("Localizable", "yourStorage.available", fallback: "Available:")
+    /// Localizable.strings
+    ///   Cleaner
+    /// 
+    ///   Created by Anatoliy Khramchenko on 31.03.2023.
+    internal static let title = Strings.tr("Localizable", "yourStorage.title", fallback: "Your Storage")
+    /// Total memory:
+    internal static let totalMemory = Strings.tr("Localizable", "yourStorage.totalMemory", fallback: "Total memory:")
+    /// Trash size:
+    internal static let trashSize = Strings.tr("Localizable", "yourStorage.trashSize", fallback: "Trash size:")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

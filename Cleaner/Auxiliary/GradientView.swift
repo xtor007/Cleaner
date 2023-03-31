@@ -36,7 +36,7 @@ class GradientView: UIView {
         guard let layer = self.layer as? CAGradientLayer else {
             return
         }
-        layer.colors = [topColor, mediumColor, bottomColor].map{ $0.cgColor }
+        layer.colors = [topColor, mediumColor, bottomColor].map { $0.cgColor }
     }
 
 }

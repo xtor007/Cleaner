@@ -28,6 +28,9 @@ internal enum Asset {
   internal static let backgroundGradientBottomColor = ColorAsset(name: "backgroundGradientBottomColor")
   internal static let backgroundGradientMediumColor = ColorAsset(name: "backgroundGradientMediumColor")
   internal static let backgroundGradientTopColor = ColorAsset(name: "backgroundGradientTopColor")
+  internal static let flowAccentColor = ColorAsset(name: "flowAccentColor")
+  internal static let secondaryColor = ColorAsset(name: "secondaryColor")
+  internal static let shadowColor = ColorAsset(name: "shadowColor")
   internal static let cleanerBackgroundImage = ImageAsset(name: "cleanerBackgroundImage")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
