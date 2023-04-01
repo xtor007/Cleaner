@@ -34,6 +34,10 @@ class CleanerViewController: UIViewController {
             self.yourStorageInfoView.updateData(storageInfo: storageInfo)
             self.deactivateSpinner()
         }
+        navigationController?.navigationBar.backIndicatorImage = Asset.backButtonImage.image
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = Asset.backButtonImage.image
+        navigationController?.navigationBar.tintColor = Asset.secondaryColor.color
+        navigationItem.titleView = createTitleView(Strings.Cleaner.title, image: Asset.cleanerNavigationImage.image)
     }
 
     private func updateElements() {

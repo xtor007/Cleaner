@@ -6,6 +6,8 @@
   
 */
 
+"cleaner.title" = "Cleaner";
+
 "yourStorage.title" = "Your Storage";
 "yourStorage.totalMemory" = "Total memory:";
 "yourStorage.available" = "Available:";

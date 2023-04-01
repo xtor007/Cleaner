@@ -22,6 +22,12 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backButtonTitle = ""
+    }
+
+    @IBAction func openCleaner(_ sender: Any) {
+        let cleanerVC = CleanerViewController(viewModel: CleanerViewModel(service: StorageService()))
+        navigationController?.pushViewController(cleanerVC, animated: true)
     }
 
 }

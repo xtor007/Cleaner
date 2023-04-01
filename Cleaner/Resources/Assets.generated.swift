@@ -39,7 +39,9 @@ internal enum Asset {
   internal static let dublicatePhotoImage = ImageAsset(name: "dublicatePhotoImage")
   internal static let dublicateScreenshotsImage = ImageAsset(name: "dublicateScreenshotsImage")
   internal static let secretStorageImage = ImageAsset(name: "secretStorageImage")
+  internal static let backButtonImage = ImageAsset(name: "backButtonImage")
   internal static let cleanerBackgroundImage = ImageAsset(name: "cleanerBackgroundImage")
+  internal static let cleanerNavigationImage = ImageAsset(name: "cleanerNavigationImage")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
