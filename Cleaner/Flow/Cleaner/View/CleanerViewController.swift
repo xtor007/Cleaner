@@ -14,6 +14,8 @@ class CleanerViewController: UIViewController {
     @IBOutlet weak var yourStorageInfoView: YourStorageInfoView!
     @IBOutlet var actionElements: [CleanerActionElement]!
 
+    private var spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+
     init(viewModel: CleanerViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -26,9 +28,11 @@ class CleanerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateElements()
+        activateSpinner()
         viewModel.fetchData { storageInfo in
             self.updateElements()
             self.yourStorageInfoView.updateData(storageInfo: storageInfo)
+            self.deactivateSpinner()
         }
     }
 
@@ -36,6 +40,21 @@ class CleanerViewController: UIViewController {
         for elementIndex in 0..<actionElements.count {
             actionElements[elementIndex].updateData(model: viewModel.cleanerActionElementsModel[elementIndex])
         }
+    }
+
+    // MARK: SPINNER
+
+    private func activateSpinner() {
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        spinner.startAnimating()
+        view.addSubview(spinner)
+        spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+
+    private func deactivateSpinner() {
+        spinner.removeFromSuperview()
+        spinner.stopAnimating()
     }
 
 }
