@@ -24,4 +24,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func openCleaner(_ sender: Any) {
+        let cleanerVC = CleanerViewController(viewModel: CleanerViewModel(service: StorageService()))
+        navigationController?.pushViewController(cleanerVC, animated: true)
+    }
+
 }
