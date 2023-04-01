@@ -33,13 +33,17 @@ internal enum Strings {
     /// Storage
     internal static let secretStorage = Strings.tr("Localizable", "actionElements.secretStorage", fallback: "Secret \nStorage")
   }
-  internal enum YourStorage {
-    /// Available:
-    internal static let available = Strings.tr("Localizable", "yourStorage.available", fallback: "Available:")
+  internal enum Cleaner {
     /// Localizable.strings
     ///   Cleaner
     /// 
     ///   Created by Anatoliy Khramchenko on 31.03.2023.
+    internal static let title = Strings.tr("Localizable", "cleaner.title", fallback: "Cleaner")
+  }
+  internal enum YourStorage {
+    /// Available:
+    internal static let available = Strings.tr("Localizable", "yourStorage.available", fallback: "Available:")
+    /// Your Storage
     internal static let title = Strings.tr("Localizable", "yourStorage.title", fallback: "Your Storage")
     /// Total memory:
     internal static let totalMemory = Strings.tr("Localizable", "yourStorage.totalMemory", fallback: "Total memory:")

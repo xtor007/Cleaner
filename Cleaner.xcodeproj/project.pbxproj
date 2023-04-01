@@ -42,6 +42,7 @@
 		FF7F874F29D800E500B0BD6B /* StorageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F874E29D800E500B0BD6B /* StorageServiceProtocol.swift */; };
 		FF7F875129D8011900B0BD6B /* StorageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F875029D8011900B0BD6B /* StorageData.swift */; };
 		FF7F875329D8019400B0BD6B /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F875229D8019400B0BD6B /* StorageService.swift */; };
+		FF7F875529D80D4000B0BD6B /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F875429D80D4000B0BD6B /* UIViewController+NavigationBar.swift */; };
 		FFDFEDAC29D616FC002354C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDFEDAB29D616FC002354C4 /* AppDelegate.swift */; };
 		FFDFEDAE29D616FC002354C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDFEDAD29D616FC002354C4 /* SceneDelegate.swift */; };
 		FFDFEDB529D616FF002354C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDFEDB429D616FF002354C4 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		FF7F874E29D800E500B0BD6B /* StorageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceProtocol.swift; sourceTree = "<group>"; };
 		FF7F875029D8011900B0BD6B /* StorageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageData.swift; sourceTree = "<group>"; };
 		FF7F875229D8019400B0BD6B /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		FF7F875429D80D4000B0BD6B /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFDFEDA829D616FC002354C4 /* Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDFEDAB29D616FC002354C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDFEDAD29D616FC002354C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			children = (
 				FF7F873C29D7912B00B0BD6B /* UIView+FixInView.swift */,
 				FF7F874329D79D5400B0BD6B /* Double+Description.swift */,
+				FF7F875429D80D4000B0BD6B /* UIViewController+NavigationBar.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				FF4FB4B229D7685D00B5CA30 /* GradientView.swift in Sources */,
 				FF7F874429D79D5400B0BD6B /* Double+Description.swift in Sources */,
 				FF7F874F29D800E500B0BD6B /* StorageServiceProtocol.swift in Sources */,
+				FF7F875529D80D4000B0BD6B /* UIViewController+NavigationBar.swift in Sources */,
 				FF7F874C29D7C96500B0BD6B /* CleanerActionElementModel.swift in Sources */,
 				FF4FB49C29D75CC900B5CA30 /* MainViewModel.swift in Sources */,
 				FF7F875129D8011900B0BD6B /* StorageData.swift in Sources */,
