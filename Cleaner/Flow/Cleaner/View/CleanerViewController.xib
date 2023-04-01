@@ -29,10 +29,20 @@
                                 <constraint firstAttribute="width" secondItem="QTx-Wb-uEM" secondAttribute="height" multiplier="750:992" id="4QB-si-3qc"/>
                             </constraints>
                         </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y97-A8-yqD" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
+                            <rect key="frame" x="141" y="397" width="111" height="111"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="111" id="1Yi-gT-Xcx"/>
+                                <constraint firstAttribute="width" constant="111" id="5N9-Gv-mHG"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="QTx-Wb-uEM" secondAttribute="bottom" id="94h-5l-vgI"/>
+                        <constraint firstItem="Y97-A8-yqD" firstAttribute="top" secondItem="Npb-BP-iNV" secondAttribute="top" constant="397" id="HKD-rE-JfY"/>
+                        <constraint firstItem="Y97-A8-yqD" firstAttribute="centerX" secondItem="Npb-BP-iNV" secondAttribute="centerX" id="HjV-Yj-JFa"/>
                         <constraint firstItem="QTx-Wb-uEM" firstAttribute="leading" secondItem="Npb-BP-iNV" secondAttribute="leading" id="nup-0a-tHX"/>
                         <constraint firstAttribute="trailing" secondItem="QTx-Wb-uEM" secondAttribute="trailing" id="qaA-hA-VcC"/>
                     </constraints>
