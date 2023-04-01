@@ -11,7 +11,7 @@ struct CleanerActionElementModel {
 
     let avatar: ImageAsset
     let title: String
-    let detectedDuplicateData: DetectedDuplicateValue?
+    var detectedDuplicateData: DetectedDuplicateValue?
 
     init(avatar: ImageAsset, title: String, detectedDuplicateData: DetectedDuplicateValue? = nil) {
         self.avatar = avatar

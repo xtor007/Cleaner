@@ -30,4 +30,22 @@ class CleanerViewModel {
         CleanerActionElementModel(avatar: Asset.allVideosImage, title: Strings.ActionElements.allVideos.uppercased())
     ]
 
+    let service: StorageServiceProtocol
+
+    init(service: StorageServiceProtocol) {
+        self.service = service
+    }
+
+    func fetchData(onSuccess: @escaping (StorageInfo) -> Void) {
+        Task {
+            let storageData = await service.calculateStorageData()
+            cleanerActionElementsModel[0].detectedDuplicateData = storageData.duplicatePhotos
+            cleanerActionElementsModel[1].detectedDuplicateData = storageData.duplicateScreens
+            cleanerActionElementsModel[2].detectedDuplicateData = storageData.duplicateContacts
+            DispatchQueue.main.async {
+                onSuccess(storageData.info)
+            }
+        }
+    }
+
 }

@@ -25,12 +25,11 @@ class CleanerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        yourStorageInfoView.updateData(storageInfo: StorageInfo(
-            totalMemory: MemorySize(value: 128 * 1024),
-            availableMemory: MemorySize(value: 24 * 1024),
-            trashSize: MemorySize(value: 470)
-        ))
         updateElements()
+        viewModel.fetchData { storageInfo in
+            self.updateElements()
+            self.yourStorageInfoView.updateData(storageInfo: storageInfo)
+        }
     }
 
     private func updateElements() {
