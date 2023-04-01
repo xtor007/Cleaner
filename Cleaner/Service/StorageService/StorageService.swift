@@ -10,7 +10,7 @@ import Foundation
 final class StorageService: StorageServiceProtocol {
     func calculateStorageData() async -> StorageData {
         do {
-            try await Task.sleep(nanoseconds: 1_000_000_000)
+            try await Task.sleep(nanoseconds: 5_000_000_000)
         } catch {}
         return StorageData(
             info: StorageInfo(
