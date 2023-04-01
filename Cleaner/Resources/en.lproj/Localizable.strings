@@ -5,3 +5,18 @@
   Created by Anatoliy Khramchenko on 31.03.2023.
   
 */
+
+"yourStorage.title" = "Your Storage";
+"yourStorage.totalMemory" = "Total memory:";
+"yourStorage.available" = "Available:";
+"yourStorage.trashSize" = "Trash size:";
+
+"actionElements.duplicatesPhotos" = "Duplicates photos";
+"actionElements.duplicatesScreen" = "Duplicate screenshots";
+"actionElements.duplicatesContacts" = "Duplicate contacts";
+"actionElements.secretStorage" = "Secret \nStorage";
+"actionElements.allPhotos" = "All \nPhotos";
+"actionElements.allVideos" = "All \nVideos";
+"actionElements.files" = "files";
+"actionElements.duplicates" = "duplicate";
+"actionElements.contacts" = "contacts";
