@@ -10,6 +10,29 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  internal enum ActionElements {
+    /// All 
+    /// Photos
+    internal static let allPhotos = Strings.tr("Localizable", "actionElements.allPhotos", fallback: "All \nPhotos")
+    /// All 
+    /// Videos
+    internal static let allVideos = Strings.tr("Localizable", "actionElements.allVideos", fallback: "All \nVideos")
+    /// contacts
+    internal static let contacts = Strings.tr("Localizable", "actionElements.contacts", fallback: "contacts")
+    /// duplicate
+    internal static let duplicates = Strings.tr("Localizable", "actionElements.duplicates", fallback: "duplicate")
+    /// Duplicate contacts
+    internal static let duplicatesContacts = Strings.tr("Localizable", "actionElements.duplicatesContacts", fallback: "Duplicate contacts")
+    /// Duplicates photos
+    internal static let duplicatesPhotos = Strings.tr("Localizable", "actionElements.duplicatesPhotos", fallback: "Duplicates photos")
+    /// Duplicate screenshots
+    internal static let duplicatesScreen = Strings.tr("Localizable", "actionElements.duplicatesScreen", fallback: "Duplicate screenshots")
+    /// files
+    internal static let files = Strings.tr("Localizable", "actionElements.files", fallback: "files")
+    /// Secret 
+    /// Storage
+    internal static let secretStorage = Strings.tr("Localizable", "actionElements.secretStorage", fallback: "Secret \nStorage")
+  }
   internal enum YourStorage {
     /// Available:
     internal static let available = Strings.tr("Localizable", "yourStorage.available", fallback: "Available:")

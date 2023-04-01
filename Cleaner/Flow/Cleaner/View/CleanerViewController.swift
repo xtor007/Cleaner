@@ -12,6 +12,7 @@ class CleanerViewController: UIViewController {
     private let viewModel: CleanerViewModel
 
     @IBOutlet weak var yourStorageInfoView: YourStorageInfoView!
+    @IBOutlet var actionElements: [CleanerActionElement]!
 
     init(viewModel: CleanerViewModel) {
         self.viewModel = viewModel
@@ -29,6 +30,13 @@ class CleanerViewController: UIViewController {
             availableMemory: MemorySize(value: 24 * 1024),
             trashSize: MemorySize(value: 470)
         ))
+        updateElements()
+    }
+
+    private func updateElements() {
+        for elementIndex in 0..<actionElements.count {
+            actionElements[elementIndex].updateData(model: viewModel.cleanerActionElementsModel[elementIndex])
+        }
     }
 
 }

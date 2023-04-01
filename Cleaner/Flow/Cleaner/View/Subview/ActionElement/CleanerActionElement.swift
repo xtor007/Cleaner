@@ -15,13 +15,16 @@ class CleanerActionElement: UIView {
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var leftBottomBlock: UIView!
     @IBOutlet weak var rightBottomBlock: UIView!
-
+    @IBOutlet weak var centerBottomBlock: UIView!
+    
     @IBOutlet weak var actionElementImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
     @IBOutlet weak var arrowView: UIView!
     @IBOutlet weak var absoluteValuesLabel: UILabel!
     @IBOutlet weak var dublicateValuesLabel: UILabel!
+
+    private var model: CleanerActionElementModel?
 
     // MARK: LIFECYCLE
 
@@ -40,8 +43,8 @@ class CleanerActionElement: UIView {
         setUpLabels()
     }
 
-    func updateData(storageInfo: StorageInfo) {
-        // self.storageInfo = storageInfo
+    func updateData(model: CleanerActionElementModel) {
+        self.model = model
         draw(frame)
     }
 
@@ -60,7 +63,30 @@ class CleanerActionElement: UIView {
     }
 
     private func setUpLabels() {
-        
+        guard let model else {
+            return
+        }
+        actionElementImage.image = model.avatar.image
+        titleLabel.text = model.title
+        if let detectedDuplicate = model.detectedDuplicateData {
+            titleLabel.font = FontFamily.Roboto.regular.font(size: 10)
+            arrowView.isHidden = false
+            absoluteValuesLabel.isHidden = false
+            dublicateValuesLabel.isHidden = false
+            leftBottomBlock.isHidden = false
+            centerBottomBlock.isHidden = false
+            rightBottomBlock.isHidden = false
+            absoluteValuesLabel.text = "\(detectedDuplicate.absoluteValue ?? 0) \(detectedDuplicate.absoluteItem)"
+            dublicateValuesLabel.text = "\(detectedDuplicate.duplicateValue ?? 0) \(Strings.ActionElements.duplicates)"
+        } else {
+            titleLabel.font = FontFamily.Roboto.regular.font(size: 13)
+            arrowView.isHidden = true
+            absoluteValuesLabel.isHidden = true
+            dublicateValuesLabel.isHidden = true
+            leftBottomBlock.isHidden = true
+            centerBottomBlock.isHidden = true
+            rightBottomBlock.isHidden = true
+        }
     }
 
 }

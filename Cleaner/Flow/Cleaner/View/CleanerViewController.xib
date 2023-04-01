@@ -13,6 +13,12 @@
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yourStorageInfoView" destination="XmA-V6-qCO" id="J3f-Gm-ovO"/>
+                <outletCollection property="actionElements" destination="yhb-YH-tXo" collectionClass="NSMutableArray" id="8qC-t9-g6v"/>
+                <outletCollection property="actionElements" destination="qAa-WA-N5q" collectionClass="NSMutableArray" id="Hop-Zy-0k5"/>
+                <outletCollection property="actionElements" destination="Esn-aQ-60I" collectionClass="NSMutableArray" id="BIS-Kq-4kU"/>
+                <outletCollection property="actionElements" destination="Dqm-iF-C1d" collectionClass="NSMutableArray" id="5Dm-VV-K4v"/>
+                <outletCollection property="actionElements" destination="uFa-JO-kxL" collectionClass="NSMutableArray" id="7X8-7V-RZ6"/>
+                <outletCollection property="actionElements" destination="Mjb-w7-B9n" collectionClass="NSMutableArray" id="HZY-hQ-YcJ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -29,20 +35,10 @@
                                 <constraint firstAttribute="width" secondItem="QTx-Wb-uEM" secondAttribute="height" multiplier="750:992" id="4QB-si-3qc"/>
                             </constraints>
                         </imageView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y97-A8-yqD" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
-                            <rect key="frame" x="141" y="397" width="111" height="111"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="111" id="1Yi-gT-Xcx"/>
-                                <constraint firstAttribute="width" constant="111" id="5N9-Gv-mHG"/>
-                            </constraints>
-                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="QTx-Wb-uEM" secondAttribute="bottom" id="94h-5l-vgI"/>
-                        <constraint firstItem="Y97-A8-yqD" firstAttribute="top" secondItem="Npb-BP-iNV" secondAttribute="top" constant="397" id="HKD-rE-JfY"/>
-                        <constraint firstItem="Y97-A8-yqD" firstAttribute="centerX" secondItem="Npb-BP-iNV" secondAttribute="centerX" id="HjV-Yj-JFa"/>
                         <constraint firstItem="QTx-Wb-uEM" firstAttribute="leading" secondItem="Npb-BP-iNV" secondAttribute="leading" id="nup-0a-tHX"/>
                         <constraint firstAttribute="trailing" secondItem="QTx-Wb-uEM" secondAttribute="trailing" id="qaA-hA-VcC"/>
                     </constraints>
@@ -58,6 +54,108 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8gf-TM-tfB">
+                    <rect key="frame" x="16" y="335" width="361" height="467"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhg-OX-99z">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="MXx-Hw-rXz"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMs-eB-R4g">
+                            <rect key="frame" x="0.0" y="41.666666666666686" width="361" height="232"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-YH-tXo" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="60.666666666666629" width="111" height="111"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="111" id="z2k-42-Vw1"/>
+                                        <constraint firstAttribute="height" constant="111" id="z2x-xF-akf"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-Bu-nP4">
+                                    <rect key="frame" x="125" y="0.0" width="111" height="232"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAa-WA-N5q" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="111" id="Ace-y7-o27"/>
+                                                <constraint firstAttribute="height" constant="111" id="dVz-Qi-ZTN"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqm-iF-C1d" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="121" width="111" height="111"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="111" id="0AW-uj-WtY"/>
+                                                <constraint firstAttribute="height" constant="111" id="RlN-S7-YhI"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="111" id="Eiz-wk-E18"/>
+                                        <constraint firstAttribute="height" constant="232" id="mhn-Ms-K8E"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esn-aQ-60I" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
+                                    <rect key="frame" x="250" y="60.666666666666629" width="111" height="111"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="111" id="NQm-Hw-BZv"/>
+                                        <constraint firstAttribute="width" constant="111" id="auh-vE-YRx"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="3MM-UH-ScR">
+                            <rect key="frame" x="0.0" y="314.33333333333337" width="361" height="111"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcp-oi-pI8">
+                                    <rect key="frame" x="0.0" y="0.0" width="1" height="111"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="111" id="Rep-lZ-UmZ"/>
+                                        <constraint firstAttribute="width" constant="1" id="hKP-mg-D4O"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-JO-kxL" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
+                                    <rect key="frame" x="46.666666666666657" y="0.0" width="111" height="111"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="111" id="f8g-W4-PuU"/>
+                                        <constraint firstAttribute="width" constant="111" id="xwk-ow-Aqb"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjb-w7-B9n" customClass="CleanerActionElement" customModule="Cleaner" customModuleProvider="target">
+                                    <rect key="frame" x="203.33333333333337" y="0.0" width="111" height="111"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="111" id="Xnr-Qr-12c"/>
+                                        <constraint firstAttribute="height" constant="111" id="oVA-Gv-Fdh"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYQ-5L-o2U">
+                                    <rect key="frame" x="360" y="0.0" width="1" height="111"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="ePL-rL-RmH"/>
+                                        <constraint firstAttribute="height" constant="111" id="hDi-iY-2Mo"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiH-Fq-5Ce">
+                            <rect key="frame" x="0.0" y="466" width="361" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ob0-4k-WFm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmA-V6-qCO" customClass="YourStorageInfoView" customModule="Cleaner" customModuleProvider="target">
                     <rect key="frame" x="96.666666666666686" y="119" width="200" height="200"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,11 +168,15 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8gf-TM-tfB" secondAttribute="bottom" constant="16" id="0ys-8U-TkP"/>
                 <constraint firstAttribute="bottom" secondItem="Npb-BP-iNV" secondAttribute="bottom" id="AxR-vv-huK"/>
                 <constraint firstItem="Npb-BP-iNV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hgz-95-ONq"/>
                 <constraint firstAttribute="trailing" secondItem="Npb-BP-iNV" secondAttribute="trailing" id="K0d-lP-14p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8gf-TM-tfB" secondAttribute="trailing" constant="16" id="LKZ-Nj-32Z"/>
                 <constraint firstItem="XmA-V6-qCO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ouj-DC-VzX"/>
                 <constraint firstItem="Npb-BP-iNV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P48-Ff-f8J"/>
+                <constraint firstItem="8gf-TM-tfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="h9A-2F-O7o"/>
+                <constraint firstItem="8gf-TM-tfB" firstAttribute="top" secondItem="XmA-V6-qCO" secondAttribute="bottom" constant="16" id="or4-oQ-Llw"/>
                 <constraint firstItem="XmA-V6-qCO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="s74-Pn-SVC"/>
             </constraints>
             <point key="canvasLocation" x="121" y="20"/>
